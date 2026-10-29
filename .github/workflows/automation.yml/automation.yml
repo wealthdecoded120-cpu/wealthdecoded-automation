@@ -1,0 +1,15 @@
+name: WealthDecoded Automation Test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 5 * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test automation
+        run: |
+          echo "WealthDecoded automation is working!"
+          date -u
